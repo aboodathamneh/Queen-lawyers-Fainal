@@ -94,6 +94,9 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
                 print("Custom FB Login failed:", err as Any)
                 return
             }
+//       after login comleted
+            let infoViewController = self.storyboard?.instantiateViewController(withIdentifier: "country") as! Country
+            self.present(infoViewController, animated: true)
             print(result?.token.tokenString as Any)
         }
     }
@@ -101,8 +104,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         if error != nil{
             print(error)
-            let infoViewController = self.storyboard?.instantiateViewController(withIdentifier: "country") as! Country
-            self.present(infoViewController, animated: true)
             return
         }
         
@@ -114,6 +115,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
             }
             print(result as Any)
         }
+        
     }
     // log out button facebook
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
@@ -132,7 +134,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
                         print("Error getting documents: \(err)")
                     } else {
                         for document in querySnapshot!.documents {
-                            self.Email = (document.data()["Email"]) as? String
+                            self.Email = (document.data()["Email"]) as! String
                         }
                         self.signIn()
                     }
