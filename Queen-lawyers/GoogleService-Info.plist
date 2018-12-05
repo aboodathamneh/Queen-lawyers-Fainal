@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>521620098918-6g1hh48br20punvqg0abj2kres2ls215.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.521620098918-6g1hh48br20punvqg0abj2kres2ls215</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDSYzupvuPuoV0hBsPMakxHmTAXP-D5gec</string>
+	<key>GCM_SENDER_ID</key>
+	<string>521620098918</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Abood-alathamneh.Queen-lawyers</string>
+	<key>PROJECT_ID</key>
+	<string>lawyers-79601</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lawyers-79601.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:521620098918:ios:47fcbfa8366aa27d</string>
+	<key>DATABASE_URL</key>
+	<string>https://lawyers-79601.firebaseio.com</string>
+</dict>
+</plist>

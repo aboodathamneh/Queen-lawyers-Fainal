@@ -3,17 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14999A91BCB231D2BC40CB64 /* Pods_Queen_lawyers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A54C13E30AB35632DA2A04 /* Pods_Queen_lawyers.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		701042A321B6AE0C001D79C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701042A221B6AE0C001D79C4 /* Main.storyboard */; };
+		701042A521B6AE14001D79C4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701042A421B6AE14001D79C4 /* Country.swift */; };
+		701042A721B6AE1B001D79C4 /* signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701042A621B6AE1B001D79C4 /* signup.swift */; };
+		701042A921B6B911001D79C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701042A821B6B911001D79C4 /* Assets.xcassets */; };
 		701E72EA21B406A500341EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E72E921B406A500341EAF /* AppDelegate.swift */; };
 		701E72EC21B406A500341EAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E72EB21B406A500341EAF /* ViewController.swift */; };
-		701E72EF21B406A500341EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701E72ED21B406A500341EAF /* Main.storyboard */; };
 		701E72F221B406A500341EAF /* Queen_lawyers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 701E72F021B406A500341EAF /* Queen_lawyers.xcdatamodeld */; };
-		701E72F421B406A800341EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701E72F321B406A800341EAF /* Assets.xcassets */; };
 		701E72F721B406A800341EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701E72F521B406A800341EAF /* LaunchScreen.storyboard */; };
 		701E730221B406A800341EAF /* Queen_lawyersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E730121B406A800341EAF /* Queen_lawyersTests.swift */; };
+		701E730D21B4077200341EAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 701E730C21B4077200341EAF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +31,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36BF077FB700D1BB2FF34689 /* Pods_Queen_lawyersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Queen_lawyersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F89B3D54CFC7E67CDC50EF9 /* Pods-Queen-lawyers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queen-lawyers.release.xcconfig"; path = "Target Support Files/Pods-Queen-lawyers/Pods-Queen-lawyers.release.xcconfig"; sourceTree = "<group>"; };
+		701042A221B6AE0C001D79C4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		701042A421B6AE14001D79C4 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		701042A621B6AE1B001D79C4 /* signup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signup.swift; sourceTree = "<group>"; };
+		701042A821B6B911001D79C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		701A962E8D913B0B56424863 /* Pods-Queen-lawyers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queen-lawyers.debug.xcconfig"; path = "Target Support Files/Pods-Queen-lawyers/Pods-Queen-lawyers.debug.xcconfig"; sourceTree = "<group>"; };
 		701E72E621B406A500341EAF /* Queen-lawyers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Queen-lawyers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		701E72E921B406A500341EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		701E72EB21B406A500341EAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		701E72EE21B406A500341EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		701E72F121B406A500341EAF /* Queen_lawyers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Queen_lawyers.xcdatamodel; sourceTree = "<group>"; };
-		701E72F321B406A800341EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		701E72F621B406A800341EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		701E72F821B406A800341EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		701E72FD21B406A800341EAF /* Queen-lawyersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Queen-lawyersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		701E730121B406A800341EAF /* Queen_lawyersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queen_lawyersTests.swift; sourceTree = "<group>"; };
 		701E730321B406A800341EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		701E730C21B4077200341EAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		70CEA68721B6775B00396A92 /* Queen-lawyers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Queen-lawyers.entitlements"; sourceTree = "<group>"; };
+		F6A54C13E30AB35632DA2A04 /* Pods_Queen_lawyers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Queen_lawyers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14999A91BCB231D2BC40CB64 /* Pods_Queen_lawyers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F5C7FBA5619C352A6FCB39C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A54C13E30AB35632DA2A04 /* Pods_Queen_lawyers.framework */,
+				36BF077FB700D1BB2FF34689 /* Pods_Queen_lawyersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		701E72DD21B406A500341EAF = {
 			isa = PBXGroup;
 			children = (
 				701E72E821B406A500341EAF /* Queen-lawyers */,
 				701E730021B406A800341EAF /* Queen-lawyersTests */,
 				701E72E721B406A500341EAF /* Products */,
+				803BAA84EF7847831424F5A4 /* Pods */,
+				0F5C7FBA5619C352A6FCB39C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +103,14 @@
 		701E72E821B406A500341EAF /* Queen-lawyers */ = {
 			isa = PBXGroup;
 			children = (
+				70CEA68721B6775B00396A92 /* Queen-lawyers.entitlements */,
 				701E72E921B406A500341EAF /* AppDelegate.swift */,
 				701E72EB21B406A500341EAF /* ViewController.swift */,
-				701E72ED21B406A500341EAF /* Main.storyboard */,
-				701E72F321B406A800341EAF /* Assets.xcassets */,
+				701042A621B6AE1B001D79C4 /* signup.swift */,
+				701042A421B6AE14001D79C4 /* Country.swift */,
+				701042A821B6B911001D79C4 /* Assets.xcassets */,
+				701042A221B6AE0C001D79C4 /* Main.storyboard */,
+				701E730C21B4077200341EAF /* GoogleService-Info.plist */,
 				701E72F521B406A800341EAF /* LaunchScreen.storyboard */,
 				701E72F821B406A800341EAF /* Info.plist */,
 				701E72F021B406A500341EAF /* Queen_lawyers.xcdatamodeld */,
@@ -99,6 +127,15 @@
 			path = "Queen-lawyersTests";
 			sourceTree = "<group>";
 		};
+		803BAA84EF7847831424F5A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				701A962E8D913B0B56424863 /* Pods-Queen-lawyers.debug.xcconfig */,
+				6F89B3D54CFC7E67CDC50EF9 /* Pods-Queen-lawyers.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 701E730621B406A800341EAF /* Build configuration list for PBXNativeTarget "Queen-lawyers" */;
 			buildPhases = (
+				8919AE1D19D24D5B9AD8EAE9 /* [CP] Check Pods Manifest.lock */,
 				701E72E221B406A500341EAF /* Sources */,
 				701E72E321B406A500341EAF /* Frameworks */,
 				701E72E421B406A500341EAF /* Resources */,
+				E7FADCB334199258D20D630D /* [CP] Embed Pods Frameworks */,
+				69B7346CA6179D21B07A8FA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +189,11 @@
 				TargetAttributes = {
 					701E72E521B406A500341EAF = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					701E72FC21B406A800341EAF = {
 						CreatedOnToolsVersion = 10.1;
@@ -157,7 +202,7 @@
 				};
 			};
 			buildConfigurationList = 701E72E121B406A500341EAF /* Build configuration list for PBXProject "Queen-lawyers" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -181,8 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				701E72F721B406A800341EAF /* LaunchScreen.storyboard in Resources */,
-				701E72F421B406A800341EAF /* Assets.xcassets in Resources */,
-				701E72EF21B406A500341EAF /* Main.storyboard in Resources */,
+				701E730D21B4077200341EAF /* GoogleService-Info.plist in Resources */,
+				701042A921B6B911001D79C4 /* Assets.xcassets in Resources */,
+				701042A321B6AE0C001D79C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,12 +241,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69B7346CA6179D21B07A8FA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Queen-lawyers/Pods-Queen-lawyers-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Queen-lawyers/Pods-Queen-lawyers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8919AE1D19D24D5B9AD8EAE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Queen-lawyers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7FADCB334199258D20D630D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Queen-lawyers/Pods-Queen-lawyers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Queen-lawyers/Pods-Queen-lawyers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		701E72E221B406A500341EAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701042A521B6AE14001D79C4 /* Country.swift in Sources */,
 				701E72F221B406A500341EAF /* Queen_lawyers.xcdatamodeld in Sources */,
+				701042A721B6AE1B001D79C4 /* signup.swift in Sources */,
 				701E72EC21B406A500341EAF /* ViewController.swift in Sources */,
 				701E72EA21B406A500341EAF /* AppDelegate.swift in Sources */,
 			);
@@ -225,14 +374,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		701E72ED21B406A500341EAF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				701E72EE21B406A500341EAF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		701E72F521B406A800341EAF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,8 +503,10 @@
 		};
 		701E730721B406A800341EAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701A962E8D913B0B56424863 /* Pods-Queen-lawyers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Queen-lawyers/Queen-lawyers.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YKUJGKWRE7;
 				INFOPLIST_FILE = "Queen-lawyers/Info.plist";
@@ -380,8 +523,10 @@
 		};
 		701E730821B406A800341EAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F89B3D54CFC7E67CDC50EF9 /* Pods-Queen-lawyers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Queen-lawyers/Queen-lawyers.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YKUJGKWRE7;
 				INFOPLIST_FILE = "Queen-lawyers/Info.plist";
