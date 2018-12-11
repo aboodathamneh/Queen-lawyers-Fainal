@@ -15,7 +15,7 @@ class Country: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     var Country:String?
     var db:Firestore?
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return 0
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -31,7 +31,8 @@ class Country: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         func loadData()  {
-            
+            pickerview.delegate = self
+            pickerview.dataSource = self
             loading.isHidden = false
             loading.startAnimating()
             listCountry.append("--- Select Country ---")
@@ -54,7 +55,7 @@ class Country: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
                 }
             }
         // Do any additional setup after loading the view.
-    }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return listCountry[row]
     }
@@ -80,5 +81,5 @@ class Country: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
 
         
     }
-    
+    }
 }

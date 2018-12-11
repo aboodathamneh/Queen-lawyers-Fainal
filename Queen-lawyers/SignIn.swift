@@ -43,7 +43,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
         // facebook
         let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
         Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
-            if let error = error {
+            if error != nil {
                 // ...
                 return
             }
@@ -86,6 +86,11 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
     //google
     @objc func handleCustomGooglesignin (){
         GIDSignIn.sharedInstance()?.signIn()
+//     after sign in to Google completed
+        let infoViewController = self.storyboard?.instantiateViewController(withIdentifier: "country") as! Country
+        self.present(infoViewController, animated: true)
+    print("done")
+        print("Google log in done")
     }
     //facebook
     @objc func handleCustomFBLogin(){
@@ -98,6 +103,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
             let infoViewController = self.storyboard?.instantiateViewController(withIdentifier: "country") as! Country
             self.present(infoViewController, animated: true)
             print(result?.token.tokenString as Any)
+         print("Facebook log in done")
         }
     }
     // tha log in button facebook
