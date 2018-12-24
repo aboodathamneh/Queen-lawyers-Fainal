@@ -102,7 +102,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
 //       after login comleted
             let infoViewController = self.storyboard?.instantiateViewController(withIdentifier: "country") as! Country
             self.present(infoViewController, animated: true)
-            print(result?.token.tokenString as Any)
+//            print(result?.token.tokenString as Any)
          print("Facebook log in done")
         }
     }
@@ -126,6 +126,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
     // log out button facebook
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("you loged out facebook ")
+//        performSegue(withIdentifier: "signinView", sender: nil)
         return
     }
     // sign in using user name and password
@@ -134,13 +135,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate,GIDSignInUIDele
             ActionSheet(Msg: "Email or Password are invalid")
         }else {
             
-            db!.collection("Users").whereField("Username", isEqualTo: user_name.text)
+            db!.collection("Users").whereField("Username", isEqualTo: user_name.text!)
                 .getDocuments() { (querySnapshot, err) in
                     if let err = err {
                         print("Error getting documents: \(err)")
                     } else {
                         for document in querySnapshot!.documents {
-                            self.Email = (document.data()["Email"]) as! String
+                            self.Email = ((document.data()["Email"]) as! String)
                         }
                         self.signIn()
                     }

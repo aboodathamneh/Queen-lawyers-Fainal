@@ -11,8 +11,7 @@ import CoreData
 import Firebase
 import FBSDKCoreKit
 import GoogleSignIn
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate {
+@UIApplicationMain class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate {
     
     var window: UIWindow?
     
@@ -20,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         // Override point for customization after application launch.
+      Database.database().isPersistenceEnabled = true
+        let scoresRef = Database.database().reference(withPath: "scores")
+        scoresRef.keepSynced(true)
         // facebook
         FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
         //        google
@@ -30,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance()?.delegate = self
         //google end
-        
+//
         return true
     }
     
@@ -40,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate {
             print("failed to log in with google:",err)
             return
         }
-        print("succesfule sign in",user)
+        print("succesfule sign in",user!)
         //google auth
         guard let idToken = user.authentication.idToken else {return}
         guard let accessToken = user.authentication.accessToken else {return}
