@@ -11,4 +11,7 @@ class Lawyers_List_Cell: UICollectionViewCell {
     @IBOutlet weak var nameCity: UILabel!
     @IBOutlet weak var lawyersImage: UIImageView!
 
+    @IBAction func SaveBu(_ sender: Any) {
+    }
+    
 }
